@@ -54,7 +54,7 @@ const HeroContent = () => {
           href="https://drive.google.com/file/d/12YdLC-nZJgXHWAKHkqUo8HXxiEKSzXqP/view?usp=sharing" 
           download="YourResumeFileName.pdf" 
         >
-          Download Resume!
+          Veiw Resume!
         </motion.a>
       </div>
 

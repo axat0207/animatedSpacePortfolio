@@ -11,9 +11,7 @@ import {
 
 import { FaYoutube } from "react-icons/fa";
 import Link from "next/link";
-const clicked = ()=>{
-    console.log("hello world clicked")
-}
+
 const Footer = () => {
   return (
     <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
@@ -25,15 +23,15 @@ const Footer = () => {
               <FaYoutube />
               <span className="text-[15px] ml-[6px]">Youtube</span>
             </p>
-            <div
-            onClick={(clicked)}
-            //   href="https://github.com/axat0207"
-            //   target="_blank"
+            <Link
+              href="https://github.com/axat0207"
+              target="_blank"
+              passHref={true}
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
               <RxGithubLogo />
               <span className="text-[15px] ml-[6px]">Github</span>
-            </div>
+            </Link>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
               <RxDiscordLogo />
               <span className="text-[15px] ml-[6px]">Discord</span>
@@ -87,7 +85,7 @@ const Footer = () => {
   target="_blank"
   className="flex flex-row items-center my-[15px] cursor-pointer"
 >
-  <span className="text-[15px] ml-[6px]">
+  <span className="text-[15px] ml-[6px] cursor-pointer">
     axxatagrawal@gmail.com
   </span>
 </Link>
